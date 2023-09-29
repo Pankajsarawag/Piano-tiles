@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Piano Tiles</title>
+        <link rel="stylesheet" type="text/css" href="./css/menu.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Lobster&family=Montserrat+Alternates:wght@200&family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Merriweather+Sans:wght@300&display=swap" rel="stylesheet">        
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    </head>
+    <body>
+        <h1 class="title" id="title">Piano Tiles</h1>
+        <button class='back-btn ' id="back-btn" >< Back</button>
+        <button class='leaderboard-btn ' id="leaderboard-btn" >Leaderboard ></button>
+        <h2 class="score" id="score">Level : </h2>
+        <div class="modes">
+            <button class="normal btn" id="normal">Normal Mode</button>
+            <button class="hacker btn" id="hacker">Hacker Mode</button>
+            <button class="hackerpp btn" id="hackerpp">Hacker Mode ++</button>
+        </div>
+        <div class="normal-game-board" id="normal-game-board">
+            <div class="row">
+                <div class="normal-col" id="0"></div>
+                <div class="normal-col" id="1"></div>
+                <div class="normal-col" id="2"></div>
+                <div class="normal-col" id="3"></div>
+            </div>
+            <div class="row">
+                <div class="normal-col" id="4"></div>
+                <div class="normal-col" id="5"></div>
+                <div class="normal-col" id="6"></div>
+                <div class="normal-col" id="7"></div>
+            </div>
+            <div class="row">
+                <div class="normal-col" id="8"></div>
+                <div class="normal-col" id="9"></div>
+                <div class="normal-col" id="10"></div>
+                <div class="normal-col" id="11"></div>
+            </div>
+            <div class="row">
+                <div class="normal-col" id="12"></div>
+                <div class="normal-col" id="13"></div>
+                <div class="normal-col" id="14"></div>
+                <div class="normal-col" id="15"></div>
+            </div>
+        </div>      
+        <div class="custom-model-main" id="custom-model-main">
+            <div class="custom-model-inner">        
+            <div class="close-btn" id="close-btn">×</div>
+                <div class="custom-model-wrap">
+                    <div class="pop-up-content-wrap">Leaderboard</div>
+                    <div class="positions" style="margin-top:15px">
+                        <div class="ld" id="0">1. </div>
+                        <div class="ld" id="2">2. </div>
+                        <div class="ld" id="3">3. </div>
+                        <div class="ld" id="4">4. </div>
+                        <div class="ld" id="5">5. </div>
+                    </div>
+                    <div style="margin-top: 20px; font-size: 21px">Score Formula : (Level×10) + (Time left)</div>
+                </div>  
+            </div>  
+            <div class="bg-overlay" id="bg-overlay"></div>
+        </div> 
+        <div class="hacker-game-board" id="hacker-game-board">
+            <div class="row">
+                <div class="hacker-col" id="hacker-0"></div>
+                <div class="hacker-col" id="hacker-1"></div>
+                <div class="hacker-col" id="hacker-2"></div>
+                <div class="hacker-col" id="hacker-3"></div>
+                <div class="hacker-col" id="hacker-4"></div>
+                <div class="hacker-col" id="hacker-5"></div>
+            </div>
+            <div class="row">
+                <div class="hacker-col" id="hacker-6"></div>
+                <div class="hacker-col" id="hacker-7"></div>
+                <div class="hacker-col" id="hacker-8"></div>
+                <div class="hacker-col" id="hacker-9"></div>
+                <div class="hacker-col" id="hacker-10"></div>
+                <div class="hacker-col" id="hacker-11"></div>
+            </div>
+            <div class="row">
+                <div class="hacker-col" id="hacker-12"></div>
+                <div class="hacker-col" id="hacker-13"></div>
+                <div class="hacker-col" id="hacker-14"></div>
+                <div class="hacker-col" id="hacker-15"></div>
+                <div class="hacker-col" id="hacker-16"></div>
+                <div class="hacker-col" id="hacker-17"></div>
+            </div>
+            <div class="row">
+                <div class="hacker-col" id="hacker-18"></div>
+                <div class="hacker-col" id="hacker-19"></div>
+                <div class="hacker-col" id="hacker-20"></div>
+                <div class="hacker-col" id="hacker-21"></div>
+                <div class="hacker-col" id="hacker-22"></div>
+                <div class="hacker-col" id="hacker-23"></div>
+            </div>
+            <div class="row">
+                <div class="hacker-col" id="hacker-24"></div>
+                <div class="hacker-col" id="hacker-25"></div>
+                <div class="hacker-col" id="hacker-26"></div>
+                <div class="hacker-col" id="hacker-27"></div>
+                <div class="hacker-col" id="hacker-28"></div>
+                <div class="hacker-col" id="hacker-29"></div>
+            </div>
+            <div class="row">
+                <div class="hacker-col" id="hacker-30"></div>
+                <div class="hacker-col" id="hacker-31"></div>
+                <div class="hacker-col" id="hacker-32"></div>
+                <div class="hacker-col" id="hacker-33"></div>
+                <div class="hacker-col" id="hacker-34"></div>
+                <div class="hacker-col" id="hacker-35"></div>
+            </div>
+        </div>
+        <div class="hackerpp-game-board" id="hackerpp-game-board">
+            <div class="row">
+                <div class="hackerpp-col" id="hackerpp-0"></div>
+                <div class="hackerpp-col" id="hackerpp-1"></div>
+                <div class="hackerpp-col" id="hackerpp-2"></div>
+                <div class="hackerpp-col" id="hackerpp-3"></div>
+                <div class="hackerpp-col" id="hackerpp-4"></div>
+                <div class="hackerpp-col" id="hackerpp-5"></div>
+            </div>
+            <div class="row">
+                <div class="hackerpp-col" id="hackerpp-6"></div>
+                <div class="hackerpp-col" id="hackerpp-7"></div>
+                <div class="hackerpp-col" id="hackerpp-8"></div>
+                <div class="hackerpp-col" id="hackerpp-9"></div>
+                <div class="hackerpp-col" id="hackerpp-10"></div>
+                <div class="hackerpp-col" id="hackerpp-11"></div>
+            </div>
+            <div class="row">
+                <div class="hackerpp-col" id="hackerpp-12"></div>
+                <div class="hackerpp-col" id="hackerpp-13"></div>
+                <div class="hackerpp-col" id="hackerpp-14"></div>
+                <div class="hackerpp-col" id="hackerpp-15"></div>
+                <div class="hackerpp-col" id="hackerpp-16"></div>
+                <div class="hackerpp-col" id="hackerpp-17"></div>
+            </div>
+            <div class="row">
+                <div class="hackerpp-col" id="hackerpp-18"></div>
+                <div class="hackerpp-col" id="hackerpp-19"></div>
+                <div class="hackerpp-col" id="hackerpp-20"></div>
+                <div class="hackerpp-col" id="hackerpp-21"></div>
+                <div class="hackerpp-col" id="hackerpp-22"></div>
+                <div class="hackerpp-col" id="hackerpp-23"></div>
+            </div>
+            <div class="row">
+                <div class="hackerpp-col" id="hackerpp-24"></div>
+                <div class="hackerpp-col" id="hackerpp-25"></div>
+                <div class="hackerpp-col" id="hackerpp-26"></div>
+                <div class="hackerpp-col" id="hackerpp-27"></div>
+                <div class="hackerpp-col" id="hackerpp-28"></div>
+                <div class="hackerpp-col" id="hackerpp-29"></div>
+            </div>
+            <div class="row">
+                <div class="hackerpp-col" id="hackerpp-30"></div>
+                <div class="hackerpp-col" id="hackerpp-31"></div>
+                <div class="hackerpp-col" id="hackerpp-32"></div>
+                <div class="hackerpp-col" id="hackerpp-33"></div>
+                <div class="hackerpp-col" id="hackerpp-34"></div>
+                <div class="hackerpp-col" id="hackerpp-35"></div>
+            </div>
+        </div>
+        <div class="timer" id="timer">Timer</div>
+        <div class="start-btn">
+            <button class="start-btn-normal btn" id="start-btn-normal">Start</button>
+        </div>
+        <script src="./js/script.js"></script>
+    </body>
+</html>
